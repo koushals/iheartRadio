@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="27123" started-at="2016-08-22T10:02:09Z" finished-at="2016-08-22T10:02:36Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="27123" started-at="2016-08-22T10:02:09Z" finished-at="2016-08-22T10:02:36Z">
+      <class name="com.test.problem.Test_GoogleFeildValidations">
+        <test-method status="PASS" signature="createTheInstance()[pri:0, instance:com.test.problem.Test_GoogleFeildValidations@5c3bd550]" name="createTheInstance" is-config="true" duration-ms="9589" started-at="2016-08-22T03:02:09Z" finished-at="2016-08-22T03:02:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createTheInstance -->
+        <test-method status="PASS" signature="loadGoogle()[pri:0, instance:com.test.problem.Test_GoogleFeildValidations@5c3bd550]" name="loadGoogle" duration-ms="3667" started-at="2016-08-22T03:02:19Z" finished-at="2016-08-22T03:02:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loadGoogle -->
+        <test-method status="PASS" signature="takescreenshots()[pri:0, instance:com.test.problem.Test_GoogleFeildValidations@5c3bd550]" name="takescreenshots" is-config="true" duration-ms="603" started-at="2016-08-22T03:02:22Z" finished-at="2016-08-22T03:02:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takescreenshots -->
+        <test-method status="PASS" signature="searchGoogle()[pri:0, instance:com.test.problem.Test_GoogleFeildValidations@5c3bd550]" name="searchGoogle" duration-ms="11101" started-at="2016-08-22T03:02:23Z" finished-at="2016-08-22T03:02:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchGoogle -->
+        <test-method status="PASS" signature="takescreenshots()[pri:0, instance:com.test.problem.Test_GoogleFeildValidations@5c3bd550]" name="takescreenshots" is-config="true" duration-ms="667" started-at="2016-08-22T03:02:34Z" finished-at="2016-08-22T03:02:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takescreenshots -->
+        <test-method status="PASS" signature="closeApplication()[pri:0, instance:com.test.problem.Test_GoogleFeildValidations@5c3bd550]" name="closeApplication" is-config="true" duration-ms="1477" started-at="2016-08-22T03:02:35Z" finished-at="2016-08-22T03:02:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApplication -->
+      </class> <!-- com.test.problem.Test_GoogleFeildValidations -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
