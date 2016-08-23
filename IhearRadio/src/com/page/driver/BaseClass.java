@@ -2,7 +2,6 @@ package com.page.driver;
 
 import java.io.File;
 import java.io.IOException;
-import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.List;
 import java.util.Properties;
@@ -11,9 +10,9 @@ import java.util.concurrent.TimeUnit;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.testng.Reporter;
 
 import com.page.locators.LoginPageEnum;
 import com.test.utils.PropertyUtil;
@@ -46,6 +45,7 @@ public class BaseClass {
 		capablities.setCapability(APP, f.getAbsolutePath());
 		appiumDriver = new AndroidDriver<>(new URL(p.getProperty(URL)), capablities);
 		appiumDriver.manage().timeouts().implicitlyWait(70, TimeUnit.SECONDS);
+		Reporter.log("lanching application on device");
 		return appiumDriver;
 	}
 	
@@ -60,6 +60,7 @@ public class BaseClass {
 		capablities.setCapability(APPACTIVITY, p.getProperty(APPACTIVITY));
 		appiumDriver = new AndroidDriver<>(new URL(p.getProperty(URL)), capablities);
 		appiumDriver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		Reporter.log("lanching application on device");
 		return appiumDriver;
 	}
 
@@ -94,6 +95,7 @@ public class BaseClass {
 		try {
 			return element(locator).isDisplayed();
 		} catch (Exception e) {
+			Reporter.log("element is not displayed");
 			return false;
 		}
 	}
@@ -101,19 +103,20 @@ public class BaseClass {
 	protected  static void closeApp() {
 		appiumDriver.navigate().back();
 		appiumDriver.navigate().back();
+		Reporter.log("closing application");
+
 	}
 	
 	protected static void resetApp() {
 		appiumDriver.resetApp();
+		Reporter.log("application reset complete");
+
 	}
 	
 	protected static int getSize(By locator) {
-		return appiumDriver.findElements(locator).size();
-	}
-	
-	
-	protected static void removeApplication(String bundleId) {
-		appiumDriver.resetApp();
+		int a = appiumDriver.findElements(locator).size();
+		Reporter.log(a+ "elements found");
+		return a;
 	}
 	
 	protected void acceptNotifications() {
@@ -126,7 +129,7 @@ public class BaseClass {
 		int endy = (int) (appiumDriver.manage().window().getSize().getHeight()*0.1);
 		int startx = (int) (appiumDriver.manage().window().getSize().getWidth()*0.2);
 		appiumDriver.swipe(startx, starty, startx, endy, 1000);
-		
+		Reporter.log("swipe up");		
 	}
 	
 	
@@ -136,11 +139,12 @@ public class BaseClass {
 		  String destFile =System.getProperty("user.dir").replace("\\", "/")+
 				  "/"+destDir + "/" + System.currentTimeMillis()+".jpg";
 		  try {
-			  System.out.println();
 		   FileUtils.copyFile(scrFile, new File(destFile));
+		   Reporter.log("image is saved in "+destFile);
 		  } catch (IOException e) {
 		   e.printStackTrace();
 		  }
+		  
 	 }
 	
 	protected static void takeScreenShot(String filename) {
@@ -149,8 +153,8 @@ public class BaseClass {
 		  String destFile =System.getProperty("user.dir").replace("\\", "/")+
 				  "/"+destDir + "/" + filename+System.currentTimeMillis()+".jpg";
 		  try {
-			  System.out.println();
 		   FileUtils.copyFile(scrFile, new File(destFile));
+		   Reporter.log("image is saved in "+destFile);
 		  } catch (IOException e) {
 		   e.printStackTrace();
 		  }
@@ -158,11 +162,20 @@ public class BaseClass {
 	
 	protected void changeContext(String context) {
 		appiumDriver.context(context);
+		Reporter.log("context changed to "+context);
+
 	}
 	protected static void loadPage(String url) {
-		
 		appiumDriver.get(url);
 	}
 	
+	
+	protected static void myAssert(boolean isTrue,StringBuffer buffer, String item){
+		if(!isTrue){
+			buffer.append(item+" ");
+			Reporter.log(item+" is missing");
+		}else
+			Reporter.log(item+" Done");
+	}
 
 }

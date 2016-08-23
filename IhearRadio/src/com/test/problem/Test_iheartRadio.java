@@ -8,8 +8,8 @@ import org.testng.annotations.Test;
 
 import com.page.action.HomePage;
 import com.page.action.LoginPage;
-import com.page.action.MusicPlayerPage;
 import com.page.action.MySuggestionsPage;
+import com.page.asserts.MusicPlayerAssert;
 import com.page.driver.BaseClass;
 import com.test.utils.PropertyUtil;
 import com.test.utils.ShellUtils;
@@ -36,8 +36,8 @@ public class Test_iheartRadio extends BaseClass{
 		LoginPage.loginPage(email, password);
 		HomePage.tapOnMySuggestion();
 		MySuggestionsPage.selectFromStations(0);
-		Assert.assertTrue(MusicPlayerPage.likeisDisplayed());
-		Assert.assertTrue(MusicPlayerPage.nextisDisplayed());
+		String result = MusicPlayerAssert.elementsAreDisplayedInMusicPage();
+		Assert.assertEquals(result.length(), 0,"there are missing fields");
 		Thread.sleep(50000);
 	}
 	

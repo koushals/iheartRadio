@@ -1,34 +1,112 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
+    <line>
+      <![CDATA[lanching application on device]]>
+    </line>
+    <line>
+      <![CDATA[context changed to WEBVIEW_1]]>
+    </line>
+    <line>
+      <![CDATA[Search IconDone]]>
+    </line>
+    <line>
+      <![CDATA[Search boxDone]]>
+    </line>
+    <line>
+      <![CDATA[image is saved in D:/andriod work/IhearRadio/outputScreenshots/1471923303289.jpg]]>
+    </line>
+    <line>
+      <![CDATA[context changed to NATIVE_APP]]>
+    </line>
+    <line>
+      <![CDATA[context changed to WEBVIEW_1]]>
+    </line>
+    <line>
+      <![CDATA[context changed to NATIVE_APP]]>
+    </line>
+    <line>
+      <![CDATA[swipe up]]>
+    </line>
+    <line>
+      <![CDATA[context changed to WEBVIEW_1]]>
+    </line>
+    <line>
+      <![CDATA[www.mobileintegration-group.comDone]]>
+    </line>
+    <line>
+      <![CDATA[image is saved in D:/andriod work/IhearRadio/outputScreenshots/1471923316670.jpg]]>
+    </line>
+    <line>
+      <![CDATA[closing application]]>
+    </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="27123" started-at="2016-08-22T10:02:09Z" finished-at="2016-08-22T10:02:36Z">
+  <suite name="Default suite" duration-ms="27402" started-at="2016-08-23T03:34:50Z" finished-at="2016-08-23T03:35:18Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="27123" started-at="2016-08-22T10:02:09Z" finished-at="2016-08-22T10:02:36Z">
+    <test name="Default test" duration-ms="27402" started-at="2016-08-23T03:34:50Z" finished-at="2016-08-23T03:35:18Z">
       <class name="com.test.problem.Test_GoogleFeildValidations">
-        <test-method status="PASS" signature="createTheInstance()[pri:0, instance:com.test.problem.Test_GoogleFeildValidations@5c3bd550]" name="createTheInstance" is-config="true" duration-ms="9589" started-at="2016-08-22T03:02:09Z" finished-at="2016-08-22T03:02:19Z">
+        <test-method status="PASS" signature="createTheInstance()[pri:0, instance:com.test.problem.Test_GoogleFeildValidations@754ba872]" name="createTheInstance" is-config="true" duration-ms="8279" started-at="2016-08-22T20:34:50Z" finished-at="2016-08-22T20:34:59Z">
           <reporter-output>
+            <line>
+              <![CDATA[lanching application on device]]>
+            </line>
           </reporter-output>
         </test-method> <!-- createTheInstance -->
-        <test-method status="PASS" signature="loadGoogle()[pri:0, instance:com.test.problem.Test_GoogleFeildValidations@5c3bd550]" name="loadGoogle" duration-ms="3667" started-at="2016-08-22T03:02:19Z" finished-at="2016-08-22T03:02:22Z">
+        <test-method status="PASS" signature="loadGoogle()[pri:0, instance:com.test.problem.Test_GoogleFeildValidations@754ba872]" name="loadGoogle" duration-ms="3648" started-at="2016-08-22T20:34:59Z" finished-at="2016-08-22T20:35:02Z">
           <reporter-output>
+            <line>
+              <![CDATA[context changed to WEBVIEW_1]]>
+            </line>
+            <line>
+              <![CDATA[Search IconDone]]>
+            </line>
+            <line>
+              <![CDATA[Search boxDone]]>
+            </line>
           </reporter-output>
         </test-method> <!-- loadGoogle -->
-        <test-method status="PASS" signature="takescreenshots()[pri:0, instance:com.test.problem.Test_GoogleFeildValidations@5c3bd550]" name="takescreenshots" is-config="true" duration-ms="603" started-at="2016-08-22T03:02:22Z" finished-at="2016-08-22T03:02:23Z">
+        <test-method status="PASS" signature="takescreenshots()[pri:0, instance:com.test.problem.Test_GoogleFeildValidations@754ba872]" name="takescreenshots" is-config="true" duration-ms="616" started-at="2016-08-22T20:35:02Z" finished-at="2016-08-22T20:35:03Z">
           <reporter-output>
+            <line>
+              <![CDATA[image is saved in D:/andriod work/IhearRadio/outputScreenshots/1471923303289.jpg]]>
+            </line>
           </reporter-output>
         </test-method> <!-- takescreenshots -->
-        <test-method status="PASS" signature="searchGoogle()[pri:0, instance:com.test.problem.Test_GoogleFeildValidations@5c3bd550]" name="searchGoogle" duration-ms="11101" started-at="2016-08-22T03:02:23Z" finished-at="2016-08-22T03:02:34Z">
+        <test-method status="PASS" signature="searchGoogle()[pri:0, instance:com.test.problem.Test_GoogleFeildValidations@754ba872]" name="searchGoogle" duration-ms="12731" started-at="2016-08-22T20:35:03Z" finished-at="2016-08-22T20:35:16Z">
           <reporter-output>
+            <line>
+              <![CDATA[context changed to NATIVE_APP]]>
+            </line>
+            <line>
+              <![CDATA[context changed to WEBVIEW_1]]>
+            </line>
+            <line>
+              <![CDATA[context changed to NATIVE_APP]]>
+            </line>
+            <line>
+              <![CDATA[swipe up]]>
+            </line>
+            <line>
+              <![CDATA[context changed to WEBVIEW_1]]>
+            </line>
+            <line>
+              <![CDATA[www.mobileintegration-group.comDone]]>
+            </line>
           </reporter-output>
         </test-method> <!-- searchGoogle -->
-        <test-method status="PASS" signature="takescreenshots()[pri:0, instance:com.test.problem.Test_GoogleFeildValidations@5c3bd550]" name="takescreenshots" is-config="true" duration-ms="667" started-at="2016-08-22T03:02:34Z" finished-at="2016-08-22T03:02:35Z">
+        <test-method status="PASS" signature="takescreenshots()[pri:0, instance:com.test.problem.Test_GoogleFeildValidations@754ba872]" name="takescreenshots" is-config="true" duration-ms="638" started-at="2016-08-22T20:35:16Z" finished-at="2016-08-22T20:35:16Z">
           <reporter-output>
+            <line>
+              <![CDATA[image is saved in D:/andriod work/IhearRadio/outputScreenshots/1471923316670.jpg]]>
+            </line>
           </reporter-output>
         </test-method> <!-- takescreenshots -->
-        <test-method status="PASS" signature="closeApplication()[pri:0, instance:com.test.problem.Test_GoogleFeildValidations@5c3bd550]" name="closeApplication" is-config="true" duration-ms="1477" started-at="2016-08-22T03:02:35Z" finished-at="2016-08-22T03:02:36Z">
+        <test-method status="PASS" signature="closeApplication()[pri:0, instance:com.test.problem.Test_GoogleFeildValidations@754ba872]" name="closeApplication" is-config="true" duration-ms="1469" started-at="2016-08-22T20:35:16Z" finished-at="2016-08-22T20:35:18Z">
           <reporter-output>
+            <line>
+              <![CDATA[closing application]]>
+            </line>
           </reporter-output>
         </test-method> <!-- closeApplication -->
       </class> <!-- com.test.problem.Test_GoogleFeildValidations -->

@@ -9,6 +9,7 @@ public class MusicPlayerPage extends BaseClass{
 	
 	static By time = By.id(MusicPlayerEnum.TIMEPLAYED_ID.toString());
 	static By like = By.id(MusicPlayerEnum.LIKE_ID.toString());
+	static By dislike = By.id(MusicPlayerEnum.DISLIKE_ID.toString());
 	static By love = By.id(MusicPlayerEnum.LOVE_ID.toString());
 	static By next = By.id(MusicPlayerEnum.NEXT_ID.toString());
 	
@@ -19,20 +20,19 @@ public class MusicPlayerPage extends BaseClass{
 	
 	
 	public static boolean likeisDisplayed() {
-		try {
-			return element(like).isDisplayed();
-		} catch (Exception e) {
-			return false;
-		}
+		return elementisDisplayed(like);
 	}
 	
+	public static boolean dislikeisDisplayed() {
+		return elementisDisplayed(dislike);
+	}
+	
+	public static boolean loveisDisplayed() {
+		return elementisDisplayed(love);
+	}
 	
 	public static boolean nextisDisplayed() {
-		try {
-			return element(next).isDisplayed();
-		} catch (Exception e) {
-			return false;
-		}
+		return elementisDisplayed(next);
 	}
 
 }

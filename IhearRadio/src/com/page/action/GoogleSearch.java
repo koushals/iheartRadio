@@ -16,7 +16,6 @@ public class GoogleSearch extends BaseClass {
 		return elementisDisplayed(searchTextField);
 	}
 
-	
 	public static boolean searchIconIsDisplayed() {
 		return elementisDisplayed(searchIcon);
 	}

@@ -3,13 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.test.problem.Test_GoogleFeildValidations">
+      <class name="com.test.problem.Test_iheartRadio">
         <methods>
-          <include name="loadGoogle"/>
-          <include name="searchGoogle"/>
           <include name="createTheInstance"/>
+          <include name="rigisterAnewUser"/>
         </methods>
-      </class> <!-- com.test.problem.Test_GoogleFeildValidations -->
+      </class> <!-- com.test.problem.Test_iheartRadio -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
